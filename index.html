@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css for the webpage -->
+    <link rel="stylesheet" type="text/css" href="./Css/style.css">
+    <!-- bootstraps link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--fontawesome link  -->
+    <script src="https://kit.fontawesome.com/623be7c2b8.js" crossorigin="anonymous"></script>
+    <!--fevicons for the icon  -->
+    <link rel="icon" type="image/x-icon" href="./assets/food-app-icon-12.jpg">
+    <!-- title of the page -->
+    <title>Meal Searcher</title>
+</head>
+
+<body>
+    <!-- Navbar with search and favourite -->
+    <nav class="navbar">
+        <!-- logo of the webpage -->
+        <a href="./index.html"><img class="logo" src="./assets/food-app-icon-12.jpg" alt=""></a>
+        <!-- name of the website  -->
+        <div class="title">MEAL APP</div>
+        <!-- search box with a search icon and input field Its also include the search result -->
+        <div id="search">
+            <input onkeyup="textSender()" type="text" id="searchtext" placeholder="Enter Meal Name">
+            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <!-- search list on searching the meal -->
+            <ul id="searchList">
+            </ul>
+        </div>
+        <!-- favourite with anchor link which will redirect to the favourite page -->
+        <a href="./Components/favourites.html" id="fav" class="favourite">FAVOURITE</a>
+    </nav>
+
+    <!-- main flex  -->
+    <div id="box">
+        <!-- category div  -->
+        <div id="category" class="foodLists">
+            <h4>Categories of the food</h4>
+
+            <!-- select input for categoty  -->
+            <select onchange="cat_click(this.value)" id="select-cat"></select>
+
+            <!-- category list  -->
+            <div id="cat-list">
+            </div>
+        </div>
+        <!-- list of the meals on basis of the category -->
+        <div id="fav-div" style="display: none;">
+            <div id="fav-list">
+            </div>
+        </div>
+
+    </div>
+    <!-- javascript for the webpage -->
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

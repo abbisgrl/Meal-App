@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Styling the navbar of the app */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(238, 241, 247);
+}
+
+/* Styling of the name of the app */
+.title {
+    font-weight: 600;
+    font-family: Garamond, serif;
+    color: #373D3F;
+}
+
+/* margin to the logo of the page */
+.logo {
+    margin-left: 15px;
+}
+
+/* favorite list of the food */
+#fav-list {
+    border-radius: 10px;
+    overflow: scroll;
+    max-height: 65vh;
+    overflow: scroll;
+}
+
+/* removing scroll bar  */
+#fav-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* items styel*/
+#fav-items {
+    width: 98%;
+    margin: 10px;
+    height: 150px;
+    border: 2.5px solid cadetblue;
+    padding: 0%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(80, 92, 165), rgba(147, 141, 202, 0));
+}
+
+/* elements in fav div  */
+#fav-items>div {
+    height: 150px;
+    width: 160px;
+    border-radius: 5px;
+    float: right;
+}
+
+#fav-items>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* image of the meal  */
+#fav-items img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+/* heading- name of the meal  */
+#fav-items h5 {
+    font-family: ui-monospace;
+    height: 60px;
+    overflow: hidden;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* button for removing the food from favourite list  */
+#fav-items button {
+    height: 40px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(85, 182, 122), rgba(255, 0, 0, 0));
+    color: red;
+    cursor: pointer;
+}
+
+
+/* favourite main div */
+#fav-div {
+    border: 2.5px solid cadetblue;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+    padding: 15px;
+    margin-top: 35px;
+    border-radius: 50px;
+}
+
+
+/* list style  */
+.centerLists {
+    border: 2px solid white;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+#fav-div h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* styling for screen with max width 1300px */
+@media only screen and (max-width:1300px) {
+    .title {
+        margin-left: 20px;
+        margin-right: 44px;
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 40px;
+    }
+}
+
+/* styling for screen with max width 1010px */
+@media only screen and (max-width:1010px) {
+    body>h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .title {
+        margin-left: 2%;
+        font-size: 2rem;
+    }
+
+    .centerLists {
+        width: 450px;
+    }
+
+    #fav-items {
+        height: 100px;
+    }
+
+    #fav-items>div {
+        height: 98px;
+        width: 150px;
+    }
+
+
+    #fav-items img {
+        width: 200px;
+
+    }
+
+    #fav-items h5 {
+        height: 60px;
+        width: 200px;
+        font-size: 15px;
+        margin: 3px 0px 0px 3px;
+        font-weight: 300;
+    }
+
+    #fav-items button {
+        height: 30px;
+        margin-left: 20px;
+        background-image: linear-gradient(to right, rgb(250, 75, 98), rgba(255, 0, 0, 0));
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+}
+
+/* styling for screen with max width 530px */
+@media only screen and (max-width:530px) {
+
+    .title {
+        margin-left: 1%;
+        font-size: 1rem;
+    }
+
+    body>h1 {
+        font-size: 38px;
+    }
+
+    .centerLists {
+        width: 350px;
+    }
+
+    #fav-items>div {
+        width: 100px;
+    }
+
+    #fav-items img {
+        width: 100px;
+    }
+
+    #fav-div {
+        padding: 5px;
+    }
+
+    #fav-items {
+        margin: 0px;
+        padding: 0%;
+        border-radius: 5px;
+    }
+
+}

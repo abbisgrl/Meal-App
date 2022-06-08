@@ -1,0 +1,437 @@
+/* Basic body styling  */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Styling the navbar of the app */
+.navbar {
+	flex-direction: row;
+	background-color: rgb(238, 241, 247)
+}
+
+/* Styling of the name of the app */
+.title {
+	font-weight: 600;
+	font-family: Garamond, serif;
+	color: #373D3F;
+}
+
+/* search bar and its components for searching the food */
+#search {
+	margin-left: -244px;
+	align-self: center;
+}
+
+#search input {
+	width: 207%;
+	height: 32px;
+	border-radius: 25px;
+	font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#search button {
+	position: absolute;
+	height: 34px;
+	width: 73px;
+	top: 23.7%;
+	border-radius: 17px;
+	font: icon;
+}
+
+/* favourite button for favourite page */
+.favourite {
+	margin-left: 32px;
+	font-size: 2rem;
+	font-weight: 600;
+	text-decoration: none;
+	font-family: Garamond, serif;
+	color: #373D3F;
+}
+
+/* search result with ul and li */
+#search ul {
+	list-style: none;
+	position: absolute;
+	text-align: start;
+	z-index: 3;
+	left: 33%;
+	width: 32.5%;
+	overflow: visible;
+	background-color: black;
+	border-radius: 22px;
+}
+
+#search ul li {
+	color: black;
+	width: 97%;
+	margin-left: -3%;
+	min-width: 170px;
+	border: black solid 2px;
+
+}
+
+#search ul li:hover {
+	background-color: rgb(179, 179, 179);
+}
+
+#search ul li a {
+	overflow: hidden;
+	height: 30px;
+	width: 62%;
+	padding: 0%;
+	margin-left: 0%;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#search ul li p {
+	color: rgb(255, 0, 0);
+	float: right;
+	padding: 0%;
+	margin: 0%;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#redirect {
+	float: right;
+}
+
+/* Main list for food according with category of the food */
+#box {
+	position: absolute;
+	display: flex;
+	flex-flow: nowrap;
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	background-color: rgb(121, 121, 229);
+	color: whitesmoke;
+	top: 10%;
+	background-image: url('https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-size: cover;
+}
+
+/* centre list of the food  */
+.foodLists {
+	border: 2.5px solid cadetblue;
+	width: 85%;
+	height: 70%;
+	margin: 6%;
+	overflow: hidden;
+	border-radius: 50px;
+}
+
+#box h4 {
+	width: 100%;
+	text-align: center;
+	font-family: initial;
+	margin-top: 5px;
+	color: black;
+	font-weight: 900;
+}
+
+#box h2,
+#fav-list h2 {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	line-height: 100px;
+	font-family: cursive;
+	margin-top: 150px;
+}
+
+
+/* categories of the foods */
+#cat-list {
+	margin: auto;
+	border-radius: 10px;
+	max-height: 540px;
+	overflow: scroll;
+
+}
+
+#cat-list {
+	max-height: 600px;
+}
+
+/* removing scroll bars of category list*/
+#cat-list::-webkit-scrollbar {
+	display: none;
+}
+
+/* iems size  */
+#cat-items {
+	width: 98%;
+	margin: 10px;
+	height: 150px;
+	border: 2px solid cadetblue;
+	padding: 0%;
+	border-radius: 18px;
+	background-image: linear-gradient(to right, rgb(80, 92, 165), rgba(147, 141, 202, 0));
+}
+
+/* divs of item image */
+#cat-items>div {
+	height: 146px;
+	width: 160px;
+	border-radius: 5px;
+	float: right;
+}
+
+#cat-items>a {
+	text-decoration: none;
+}
+
+/* meal image  */
+#cat-items img {
+	height: 100%;
+	width: 90%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+/* name of the meal */
+#cat-items h5 {
+	font-family: ui-monospace;
+	height: 70px;
+	overflow: hidden;
+	width: 350px;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	font-weight: 500;
+}
+
+/* button for adding the foods in favourite list */
+#cat-items button {
+	height: 40px;
+	margin-left: 15px;
+	background-image: linear-gradient(to right, rgb(145, 172, 182), rgba(255, 0, 0, 0));
+	border-radius: 10px;
+	color: black;
+	margin-top: -29px;
+	cursor: pointer;
+}
+
+/* css for selecting the category */
+#select-cat {
+	width: 50%;
+	margin: 5px 25%;
+	background-color: transparent;
+	border: 1px solid cadetblue;
+	padding: 5px;
+	color: black;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+/* styling for the screen with max width 1300px */
+@media only screen and (max-width:1300px) {
+	.title {
+		margin-left: -33%;
+		font-size: 2rem;
+	}
+
+	.logo {
+		width: 40px;
+	}
+
+	#search button {
+		left: 62%;
+	}
+
+	#box {
+		flex-wrap: wrap;
+	}
+
+	a i {
+		font-size: 30px;
+	}
+}
+
+/* styling for the screen with max width 1010px */
+@media only screen and (max-width:1010px) {
+	body>h1 {
+		font-size: 60px;
+		font-weight: 700;
+	}
+
+	.logo {
+		width: 40px;
+	}
+
+	.title {
+		margin-left: -13%;
+		font-size: 2rem;
+	}
+
+	#fav {
+		font-size: 2rem;
+	}
+
+	#search {
+		margin-left: -75px;
+	}
+
+	#search input {
+		width: 113%;
+	}
+
+	#search button {
+		left: 59%;
+	}
+
+	#background {
+		height: 50%;
+	}
+}
+
+/* styling for the screen with max width 770px */
+@media only screen and (max-width:770px) {
+	.logo {
+		width: 40px;
+	}
+
+	.title {
+		margin-left: -22px;
+		font-size: 1rem;
+	}
+
+	#search {
+		margin-left: 2px;
+	}
+
+	#search input {
+		width: 80%;
+	}
+
+	#search button {
+		width: 50px;
+		left: 63%;
+
+	}
+
+	#fav {
+		margin-left: 20px;
+		font-size: 1rem;
+	}
+
+	#cat-items {
+		height: 100px;
+	}
+
+	#cat-items>div {
+		height: 98px;
+		width: 150px;
+	}
+
+	#cat-items img {
+		width: 200px;
+
+	}
+
+	#cat-items h5 {
+		height: 60px;
+		width: 200px;
+		font-size: 15px;
+		margin: 3px 0px 0px 3px;
+		font-weight: 300;
+	}
+
+	#cat-items button {
+		height: 30px;
+		margin-left: 20px;
+		background-image: linear-gradient(to right, rgb(145, 172, 182), rgba(255, 0, 0, 0));
+		border-radius: 10px;
+		font-size: 12px;
+		padding: 2px 5px;
+	}
+
+	body>h1 {
+		margin-top: 20%;
+		font-weight: 500;
+	}
+
+	#search ul {
+		left: 25%;
+		width: 40%;
+	}
+
+	#search ul li {
+		padding: 0px 10px;
+		color: black;
+		min-width: 120px;
+		height: 40px;
+	}
+
+
+	#search ul li a {
+		font-size: 12px;
+		width: 100%;
+	}
+
+	#search ul li p {
+		visibility: hidden;
+		height: 0%;
+		width: 0%;
+	}
+
+	#box h4 {
+		font-size: 17px;
+	}
+}
+
+/* styling for the screen with max width 530px */
+@media only screen and (max-width:530px) {
+	#search {
+		margin-left: 2px;
+	}
+
+	.title {
+		margin-left: -11%;
+		font-size: 1rem;
+	}
+
+	#search input {
+		width: 100px;
+	}
+
+	#search button {
+		height: 28px;
+		width: 35px;
+		left: 62%;
+		top: 24.7%;
+	}
+
+	#select-cat {
+		font-size: 12px;
+	}
+
+	a i {
+
+		font-size: 20px;
+	}
+
+	#background {
+		height: 42%;
+	}
+
+	#fav {
+		margin-right: 10px;
+		font-size: 15px;
+	}
+
+	body>h1 {
+		font-size: 38px;
+	}
+
+}
