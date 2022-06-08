@@ -25,11 +25,16 @@ body {
     font-weight: 600;
     font-family: Garamond, serif;
     color: #373D3F;
+    font-size: 2rem;
+    margin-left: 20px;
 }
 
 /* margin to the logo of the page */
 .logo {
     margin-left: 15px;
+    height: 54px;
+    width: 54px;
+    margin-top: 9px;
 }
 
 /* favorite list of the food */

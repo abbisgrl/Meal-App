@@ -26,9 +26,13 @@ body {
 	font-weight: 600;
 	font-family: Garamond, serif;
 	color: #373D3F;
+    font-size: 2rem;   
+    margin-left: 10px;
 }
 .logo{
     margin-left: 15px;
+    width: 54px;
+    margin-top: 10px;
 }
 /* favourite button for favourite page */
 .favourite {
@@ -64,7 +68,7 @@ body {
 }
 /* category of the food */
 #category{
-    margin-top: -4%;
+    margin-top: -3%;
     font-size: 3rem;
     font-weight: 900;
     margin-left: 10%;
