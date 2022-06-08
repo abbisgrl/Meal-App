@@ -32,8 +32,8 @@ body {
 /* margin to the logo of the page */
 .logo {
     margin-left: 15px;
-    height: 54px;
-    width: 54px;
+    height: 40px;
+    width: 40px;
     margin-top: 9px;
 }
 
@@ -142,9 +142,9 @@ body {
         font-size: 2rem;
     }
 
-    .logo {
+    /* .logo {
         width: 40px;
-    }
+    } */
 }
 
 /* styling for screen with max width 1010px */
@@ -154,9 +154,9 @@ body {
         font-weight: 700;
     }
 
-    .logo {
+    /* .logo {
         width: 40px;
-    }
+    } */
 
     .title {
         margin-left: 2%;

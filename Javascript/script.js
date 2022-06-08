@@ -56,8 +56,10 @@ function getCategoryData(alphabet){
             button=document.createElement("button");
             button.innerHTML = "Add to Favourite";
             button.id= meal.idMeal;
-            
             button.setAttribute("onclick", "favourite(this.id)" );
+            button.setAttribute("onclick", function alertAdd(event){
+                console.log('Your food is added')
+            } );
 
             // adding child to parent 
             parent.appendChild(div);
@@ -70,7 +72,6 @@ function getCategoryData(alphabet){
     }
     httpReq.send();
 }
-
 
 // adding all category  data 
 httpReq.open("get", "https://www.themealdb.com/api/json/v1/1/list.php?c=list", false);
@@ -95,7 +96,7 @@ function cat_click(char){
     getCategoryData(alphabet);
 }
 
-// add favorite butto is clicked 
+// add to favourite on clicked 
 function favourite(name){
     if(itemSet.size==0){
         const myNode = document.getElementById("fav-list");
