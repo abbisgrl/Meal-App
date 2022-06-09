@@ -57,9 +57,6 @@ function getCategoryData(alphabet){
             button.innerHTML = "Add to Favourite";
             button.id= meal.idMeal;
             button.setAttribute("onclick", "favourite(this.id)" );
-            button.setAttribute("onclick", function alertAdd(event){
-                console.log('Your food is added')
-            } );
 
             // adding child to parent 
             parent.appendChild(div);
