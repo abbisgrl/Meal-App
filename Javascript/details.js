@@ -21,7 +21,6 @@ httpReq.onload = function() {
         document.getElementById('instruction').innerHTML=meal.strInstructions;
         document.getElementById('category').innerHTML=document.getElementById('category').innerHTML+meal.strCategory;
         document.getElementById('img').setAttribute("src", meal.strMealThumb);
-        document.getElementById('yt').setAttribute("href", meal.strYoutube);
         break;
     }
 

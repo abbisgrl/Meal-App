@@ -105,9 +105,19 @@ function favourite(name){
         alphabet ="https://www.themealdb.com/api/json/v1/1/lookup.php?i="+ name;
         getFavData(alphabet);
     }
+    // confirmation();
     
 }
-
+// function confirmation() {
+//     // Swal.fire({
+//     //   title: "Show Two Buttons Inside the Alert",
+//     //   showCancelButton: true,
+//     //   confirmButtonText: "Confirm",
+//     //   confirmButtonColor: "#00ff99",
+//     //   cancelButtonColor: "#ff0099"
+//     // });
+//     swal("Good job!", "You clicked the button!", "success");
+//   }
 
 
 getCategoryData("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood");
